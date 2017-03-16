@@ -1,0 +1,34 @@
+﻿<Window x:Class="银行储蓄管理.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="700" Width="1200">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="1192">
+            <Grid.Background>
+                <ImageBrush ImageSource="/images/菜单.jpg" Stretch="UniformToFill" TileMode="None" />
+            </Grid.Background>
+            <Button x:Name="btn1"  HorizontalAlignment="Left" Margin="489,0,0,0" VerticalAlignment="Top" Width="77" Height="93" Background="Transparent" BorderBrush="Transparent" Click="btn_Click" Tag="Page1"/>
+            <Button x:Name="btn2"  HorizontalAlignment="Left" Margin="600,0,0,0" VerticalAlignment="Top" Width="77" Height="93" Background="Transparent" BorderBrush="Transparent" Click="btn_Click" Tag="Page2"/>
+            <Button x:Name="btn3"  HorizontalAlignment="Left" Margin="714,0,0,0" VerticalAlignment="Bottom" Width="77" Height="93" Background="Transparent" BorderBrush="Transparent" Click="btn_Click" Tag="Page3"/>
+            <Button x:Name="btn4"  HorizontalAlignment="Left" Margin="824,0,0,0" VerticalAlignment="Top" Width="77" Height="93" Background="Transparent" BorderBrush="Transparent" Click="btn_Click" Tag="Page4"/>
+            <Button x:Name="btn5"  HorizontalAlignment="Left" Margin="947,0,0,0" VerticalAlignment="Top" Width="77" Height="93" Background="Transparent" BorderBrush="Transparent" Click="btn_Click" Tag="Page5"/>
+            <Button x:Name="btn6"  HorizontalAlignment="Left" Margin="1054,0,0,0" VerticalAlignment="Top" Width="77" Height="93" Background="Transparent" BorderBrush="Transparent" Click="btn_Click" Tag="Page6"/>
+        </Grid>
+        <Grid Background="#FF8DB2D6" HorizontalAlignment="Left" Height="576" Margin="0,93,0,0" VerticalAlignment="Top" Width="1192">
+            <Grid Background="#FF224787" HorizontalAlignment="Left" Height="520" Margin="30,27,0,0" VerticalAlignment="Top" Width="245">
+                <Image Source="/images/管理员.jpg" HorizontalAlignment="Left" Height="171" Margin="50,57,0,0" VerticalAlignment="Top" Width="140"/>
+                <Label Foreground="White" Content="员工编号：" HorizontalAlignment="Left" Margin="32,233,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Foreground="White" Content="员工姓名：" HorizontalAlignment="Left" Margin="32,266,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Foreground="White" Content="员工身份：" HorizontalAlignment="Left" Margin="32,296,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Foreground="White" FontSize="14" x:Name="lb_timer"  HorizontalAlignment="Left" Margin="32,485,0,0" VerticalAlignment="Top" Width="203" Height="25"/>
+                <Button Name="btn_changeuser" Foreground="White" Background="Transparent" BorderBrush="Transparent" Content="注销" HorizontalAlignment="Left" Margin="151,417,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Name="btn_exit" Foreground="White" Background="Transparent" BorderBrush="Transparent" Content="退出" HorizontalAlignment="Left" Margin="151,451,0,0" VerticalAlignment="Top" Width="75" FontSize="14"/>
+                <Button Name="btn_changepwd" Foreground="White" Background="Transparent" BorderBrush="Transparent" Content="修改密码" HorizontalAlignment="Left" Margin="151,373,0,0" VerticalAlignment="Top" Width="75" FontSize="14"/>
+                <Label Name="lb_no" Foreground="White" HorizontalAlignment="Left" Margin="135,235,0,0" VerticalAlignment="Top"/>
+                <Label Name="lb_name" Foreground="White" HorizontalAlignment="Left" Margin="135,269,0,0" VerticalAlignment="Top"/>
+                <Label Name="lb_rank" Foreground="White" HorizontalAlignment="Left" Margin="135,298,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </Grid>
+        <Frame Name="mainframe" BorderThickness="2" BorderBrush="#FF8DB2D6" Margin="309,120,34,32"/>
+    </Grid>
+</Window>

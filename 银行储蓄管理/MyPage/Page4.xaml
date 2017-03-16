@@ -1,0 +1,35 @@
+﻿<Page x:Class="银行储蓄管理.MyPage.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300" Width="849" Height="517"
+	Title="Page4">
+
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="517" VerticalAlignment="Top" Width="849">
+            <TabItem Header="职员管理">
+                <Grid Background="#FFBFD5E8">
+                    <GroupBox Header="    工资修改" HorizontalAlignment="Left" VerticalAlignment="Top" Height="152" Width="764" Margin="35,30,0,0"/>
+                    <GroupBox Header="    信息管理" HorizontalAlignment="Left" Margin="35,212,0,0" VerticalAlignment="Top" Height="234" Width="764">
+                        <DataGrid  Name="datagrid4" HorizontalAlignment="Left" Margin="105,24,0,0" VerticalAlignment="Top" Height="158" Width="345" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="员工编号" Binding="{Binding 员工编号}"/>
+                                <DataGridTextColumn Header="姓名" Binding="{Binding 姓名}"/>
+                                <DataGridTextColumn Header="性别" Binding="{Binding 性别}"/>
+                                <DataGridTextColumn Header="身份" Binding="{Binding 身份}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+                    <Label Content="员工编号：" HorizontalAlignment="Left" Margin="100,98,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                    <Label Content="新工资：" HorizontalAlignment="Left" Margin="354,98,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                    <TextBox Name="tb_4_1" HorizontalAlignment="Left" Height="23" Margin="194,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox Name="tb_4_2" HorizontalAlignment="Left" Height="23" Margin="436,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button Name="btn_4_1" Foreground="White" Background="#FF223770" Content="确定" HorizontalAlignment="Left" Margin="618,101,0,0" VerticalAlignment="Top" Width="75" Height="22"/>
+                    <Button Name="btn_4_2" Foreground="White" Background="#FF223770" Content="修改" HorizontalAlignment="Left" Margin="618,389,0,0" VerticalAlignment="Top" Width="75"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>
